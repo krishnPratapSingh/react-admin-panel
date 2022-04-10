@@ -1,0 +1,35 @@
+.table {
+
+    .cellWrapper {
+        display: flex;
+        align-items: center;
+
+        .image {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin-right: 10px;
+            object-fit: cover;
+        }
+    }
+
+    .status {
+        padding: 5px;
+        border-radius: 5px;
+
+        &.Completed {
+            color: green;
+            background-color: rgba(0, 128, 0, 0.356);
+        }
+
+        &.Pending {
+            color: #838331;
+            background-color: rgb(255 255 0 / 70%);
+        }
+
+        &.Failed {
+            color: #bf0303;
+            background-color: rgba(255, 0, 0, 0.356);
+        }
+    }
+}
